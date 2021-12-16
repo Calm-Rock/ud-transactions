@@ -1,92 +1,45 @@
 # UD-Transactions
-A Really simple DApp to get a user's recent transactions info from their address incorporating the use of Unstoppable Domains.
+A Really simple DApp to get a user's recent transactions info from their address incorporating the use of Unstoppable Domains login feature.
 
 This project is a submission for the [Unstoppable Domains](https://gitcoin.co/issue/unstoppabledomains/gitcoin-bounties/1/100027208) Gitcoin GR12 hackathon.
 
 # Video Demo
-A video demo of the app can be found [here](https://drive.google.com/drive/folders/1fqpleyg6gDAttlwQloVSfXv_KW6rUsRK?usp=sharing)
-
-# Contact info
-**Discord** : Cheeto.da#0105
-**Email** : cheetoda0x@gmail.com
-**Twitter** : [@cheetoda0x](https://twitter.com/cheetoda0x)
-**Gitcoin** : [Calm-Rock](https://gitcoin.co/calm-rock)
+A video demo of the app can be found [here](https://youtu.be/-LQk7HozBos)
 
 # Live Website
 You can find a live version of the webapp [here](https://ud-transactions.vercel.app)
 
+# Contact info
+**Discord** : Cheeto.da#0105 <br>
+**Email** : cheetoda0x@gmail.com <br>
+**Twitter** : [@cheetoda0x](https://twitter.com/cheetoda0x) <br>
 
+# Steps to setup locally
 
+1. Clone the repo and cd in to the direcotry
+``` 
+git clone https://github.com/Calm-Rock/ud-transactions.git
+cd ud-transactions
+```
+2. Install the dependencies
+``` 
+npm install
 
+```
+3. Create a .env file in the root folder and populate it wiht the following variables:
+```
+REACT_APP_UAUTH_CLIENT_ID=
+REACT_APP_UAUTH_CLIENT_SECRET=
+REACT_APP_UAUTH_REDIRECT_URI=
+REACT_APP_UAUTH_LOGOUT_REDIRECT_URI=
+REACT_APP_ETHPLORER_API_KEY=
+```
+4. Run the local development environment
+```
+npm start
+```
+It should open up the localhost window in the browser.
 
+A cool feature that I'd like to include in the future version of the DApp would be to throw out the [Gini-Coefficient](https://en.wikipedia.org/wiki/Gini_coefficient) values for all the tokens that a user holds.
 
-### Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hope you like it ❤️
