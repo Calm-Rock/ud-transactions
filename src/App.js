@@ -1,23 +1,18 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [transactions, setTransactions] = React.useState()
+  React.useEffect(() => {
+    fetch('https://api.ethplorer.io/getAddressTransactions/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?apiKey=freekey')
+      .then(response => response.json())
+      .then(data => setTransactions(data))
+  }, [])
+  console.log(transactions)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button>Hello</button>
     </div>
   );
 }
