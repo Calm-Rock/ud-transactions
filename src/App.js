@@ -23,7 +23,7 @@ function App() {
       .loginWithPopup()
       .then((user) => setUser(user))
       .catch((error) => console.log(error))
-      .finally(() => window.location.reload());
+      //.finally(() => window.location.reload());
   };
 
   const handleLogout = () => {
@@ -31,7 +31,7 @@ function App() {
       .logout()
       .then(() => setUser(undefined))
       .catch((error) => console.log(error))
-      .finally(() => window.location.reload());
+      //.finally(() => window.location.reload());
   };
 
   const renderContent = () => {
