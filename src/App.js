@@ -22,7 +22,7 @@ function App() {
     uauth
       .loginWithPopup()
       .then((user) => setUser(user))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
       //.finally(() => window.location.reload());
   };
 
@@ -30,7 +30,7 @@ function App() {
     uauth
       .logout()
       .then(() => setUser(undefined))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
       //.finally(() => window.location.reload());
   };
 
