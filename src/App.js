@@ -18,20 +18,38 @@ function App() {
     }
   }, [user]);
 
-  const handleLogin = () => {
-    uauth
-      .loginWithPopup()
-      .then((user) => setUser(user))
-      .catch((error) => console.log(error));
-      //.finally(() => window.location.reload());
+  React.useEffect(() => {
+    const initUser = async () => {
+      try {
+        const user = await uauth?.user();
+        setUser(user);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    initUser();
+  }, []);
+
+  const handleLogin = async () => {
+    try {
+      await uauth?.loginWithPopup();
+      const user = await uauth?.user();
+      setUser(user);
+    } catch (error) {
+      console.log(error);
+    }
+    return window.location.reload();
   };
 
-  const handleLogout = () => {
-    uauth
-      .logout()
-      .then(() => setUser(undefined))
-      .catch((error) => console.log(error));
-      //.finally(() => window.location.reload());
+  const handleLogout = async () => {
+    try {
+      await uauth?.logout();
+      setUser(undefined);
+    } catch (error) {
+      console.log(error);
+    }
+    return window.location.reload();
   };
 
   const renderContent = () => {
