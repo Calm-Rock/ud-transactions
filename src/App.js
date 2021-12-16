@@ -12,7 +12,27 @@ function App() {
   console.log(transactions)
   return (
     <div className="App">
-      <button>Hello</button>
+          <div className="App">
+      <table>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Value</th>
+          <th>Date</th>
+        </tr>
+        {transactions &&
+          transactions.map(({ from, to, value, timestamp }) => (
+            <tr>
+              <td>{from}</td>
+              <td>{to}</td>
+              <td style={{ textAlign: "right" }}>
+                {value.toFixed(4).toString() + " ETH"}
+              </td>
+              <td>{new Date(timestamp * 1000).toLocaleDateString()}</td>
+            </tr>
+          ))}
+      </table>
+    </div>
     </div>
   );
 }
