@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+# UD-Transactions
+A Really simple DApp to get a user's recent transactions info from their address incorporating the use of Unstoppable Domains.
+
+This project is a submission for the [Unstoppable Domains](https://gitcoin.co/issue/unstoppabledomains/gitcoin-bounties/1/100027208) Gitcoin GR12 hackathon.
+
+# Video Demo
+A video demo of the app can be found [here](https://drive.google.com/drive/folders/1fqpleyg6gDAttlwQloVSfXv_KW6rUsRK?usp=sharing)
+
+# Contact info
+**Discord** : Cheeto.da#0105
+**Email** : cheetoda0x@gmail.com
+**Twitter** : [@cheetoda0x](https://twitter.com/cheetoda0x)
+**Gitcoin** : [Calm-Rock](https://gitcoin.co/calm-rock)
+
+# Live Website
+You can find a live version of the webapp [here](https://ud-transactions.vercel.app)
+
+
+
+
+
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
