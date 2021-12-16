@@ -3,6 +3,9 @@ A Really simple DApp to get a user's recent transactions info from their address
 
 This project is a submission for the [Unstoppable Domains](https://gitcoin.co/issue/unstoppabledomains/gitcoin-bounties/1/100027208) Gitcoin GR12 hackathon.
 
+# Project Repo
+You can find it [here](https://github.com/Calm-Rock/ud-transactions)
+
 # Video Demo
 A video demo of the app can be found [here](https://youtu.be/-LQk7HozBos)
 
